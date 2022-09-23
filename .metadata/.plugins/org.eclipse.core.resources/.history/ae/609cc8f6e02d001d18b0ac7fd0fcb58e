@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JSP 2</title>
+</head>
+<body>
+	<%!int num1 = 10;%>
+	<%!int num2 = 20;%>
+	<%!int num3 = 0;%>
+	<%!public void add() {
+	num3 = num1 + num2;
+}%>
+	<%
+	add();
+	%>
+	<%=num3%>
+
+
+</body>
+</html>

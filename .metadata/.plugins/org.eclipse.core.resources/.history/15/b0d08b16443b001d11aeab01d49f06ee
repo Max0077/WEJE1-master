@@ -1,0 +1,8 @@
+package com.jspiders.springmvc.service;
+
+public interface StudentServiceInterface {
+
+	void addStudent(String name, String email, String userName, 
+			String password);
+
+}

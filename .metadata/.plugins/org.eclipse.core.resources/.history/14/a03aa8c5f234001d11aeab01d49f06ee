@@ -1,0 +1,9 @@
+package com.jspiders.springcore;
+
+public class DemoMain {
+	public static void main(String[] args) {
+		Demo demo = new Demo() {
+		};
+	}
+
+}

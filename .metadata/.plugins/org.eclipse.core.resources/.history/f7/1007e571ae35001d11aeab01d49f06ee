@@ -1,0 +1,18 @@
+package com.jspiders.springcore.beans;
+
+import lombok.Data;
+
+@Data
+public class StudentDetails {
+
+	private String email;
+
+	private long phone;
+
+	private String degree;
+
+	private String stream;
+
+	private int yop;
+
+}

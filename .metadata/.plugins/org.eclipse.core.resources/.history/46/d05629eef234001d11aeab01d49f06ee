@@ -1,0 +1,11 @@
+package com.jspiders.springcore.beans;
+
+public class StudentBean {
+
+	int id;
+
+	String name;
+
+	String email;
+
+}

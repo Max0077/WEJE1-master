@@ -1,0 +1,11 @@
+package com.jspiders.springcore.beans;
+
+public class PlayerBean {
+
+	private int id;
+
+	private String name;
+
+	private String role;
+
+}

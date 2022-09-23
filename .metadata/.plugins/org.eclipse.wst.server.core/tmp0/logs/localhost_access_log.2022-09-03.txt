@@ -1,0 +1,14 @@
+0:0:0:0:0:0:0:1 - - [03/Sep/2022:08:49:26 +0530] "GET /servlets/UserPassword.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Sep/2022:17:19:48 +0530] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [03/Sep/2022:17:20:21 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [03/Sep/2022:17:31:31 +0530] "GET HTTP/1.1 " 400 795
+0:0:0:0:0:0:0:1 - - [03/Sep/2022:17:31:32 +0530] "GET /servlets/UserPassword.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [03/Sep/2022:17:41:15 +0530] "POST /servlets/UsernamePassword HTTP/1.1" 200 42
+127.0.0.1 - - [03/Sep/2022:18:15:12 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [03/Sep/2022:18:15:13 +0530] "GET /servlets/EmployeeRegistration.html HTTP/1.1" 200 910
+0:0:0:0:0:0:0:1 - - [03/Sep/2022:18:15:41 +0530] "POST /servlets/EmployeeRegistration HTTP/1.1" 200 90
+0:0:0:0:0:0:0:1 - - [03/Sep/2022:18:16:33 +0530] "POST /servlets/EmployeeRegistration HTTP/1.1" 200 90
+127.0.0.1 - - [03/Sep/2022:18:17:19 +0530] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [03/Sep/2022:18:17:33 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [03/Sep/2022:18:17:34 +0530] "GET /servlets/EmployeeRegistration.html HTTP/1.1" 200 898
+0:0:0:0:0:0:0:1 - - [03/Sep/2022:18:17:52 +0530] "POST /servlets/Employee HTTP/1.1" 200 81

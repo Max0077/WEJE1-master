@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- <bean class="com.jspiders.springcore.beans.EmployeeBean" name="employee1"> 
+		<property name="id" value="1" /> <property name="name" value="Bhavesh" /> 
+		<property name="employeeDetails" ref="employeeDetails1"/> </bean> <bean class="com.jspiders.springcore.beans.EmployeeDetailsBean" 
+		name="employeeDetails1"> <property name="email" value="bhavesh@gmail.com" 
+		/> <property name="phone" value="9876543210" /> <property name="salary" value="50000" 
+		/> <property name="address" value="Pune" /> </bean> -->
+
+	<bean class="com.jspiders.springcore.beans.EmployeeBean"
+		name="employee1">
+		<property name="id" value="1" />
+		<property name="name" value="Bhavesh" />
+		<property name="employeeDetails">
+			<bean class="com.jspiders.springcore.beans.EmployeeDetailsBean"
+				name="employeeDetails1">
+				<property name="email" value="bhavesh@gmail.com" />
+				<property name="phone" value="9876543210" />
+				<property name="salary" value="50000" />
+				<property name="address" value="Mumbai" />
+			</bean>
+		</property>
+	</bean>
+	<bean class="com.jspiders.springcore.beans.EmployeeBean"
+		name="employee2">
+		<property name="id" value="2" />
+		<property name="name" value="Chetna" />
+		<property name="employeeDetails">
+			<bean class="com.jspiders.springcore.beans.EmployeeDetailsBean"
+				name="employeeDetails2">
+				<property name="email" value="chetna@gmail.com" />
+				<property name="phone" value="9876543211" />
+				<property name="salary" value="50000" />
+				<property name="address" value="Pune" />
+			</bean>
+		</property>
+	</bean>
+</beans>

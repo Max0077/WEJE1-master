@@ -1,0 +1,17 @@
+127.0.0.1 - - [07/Sep/2022:17:15:57 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [07/Sep/2022:17:15:59 +0530] "GET /servlets/DemoJSP4.jsp HTTP/1.1" 200 211
+0:0:0:0:0:0:0:1 - - [07/Sep/2022:17:15:59 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [07/Sep/2022:17:16:06 +0530] "GET /servlets/DemoJSP1.jsp? HTTP/1.1" 200 166
+0:0:0:0:0:0:0:1 - - [07/Sep/2022:17:17:19 +0530] "GET /servlets/DemoJSP4.jsp HTTP/1.1" 200 225
+0:0:0:0:0:0:0:1 - - [07/Sep/2022:17:17:19 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [07/Sep/2022:17:17:24 +0530] "POST /servlets/DemoJSP1.jsp HTTP/1.1" 200 166
+0:0:0:0:0:0:0:1 - - [07/Sep/2022:17:21:27 +0530] "GET /servlets/DemoJSP4.jsp HTTP/1.1" 200 292
+0:0:0:0:0:0:0:1 - - [07/Sep/2022:17:21:27 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [07/Sep/2022:17:21:34 +0530] "GET /servlets/DemoJSP1.jsp?username=ABC HTTP/1.1" 200 184
+0:0:0:0:0:0:0:1 - - [07/Sep/2022:17:22:30 +0530] "GET /servlets/DemoJSP4.jsp HTTP/1.1" 200 293
+0:0:0:0:0:0:0:1 - - [07/Sep/2022:17:22:30 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [07/Sep/2022:17:22:35 +0530] "POST /servlets/DemoJSP1.jsp HTTP/1.1" 200 184
+0:0:0:0:0:0:0:1 - - [07/Sep/2022:17:25:53 +0530] "GET /servlets/DemoJSP4.jsp HTTP/1.1" 200 479
+0:0:0:0:0:0:0:1 - - [07/Sep/2022:17:25:58 +0530] "GET /servlets/DemoJSP2.jsp? HTTP/1.1" 200 166
+0:0:0:0:0:0:0:1 - - [07/Sep/2022:17:26:03 +0530] "GET /servlets/DemoJSP3.jsp? HTTP/1.1" 200 358
+0:0:0:0:0:0:0:1 - - [07/Sep/2022:17:26:09 +0530] "GET /servlets/DemoJSP3.jsp? HTTP/1.1" 200 370

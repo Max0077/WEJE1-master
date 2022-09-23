@@ -1,0 +1,14 @@
+package com.jspiders.serialization.objects;
+
+public class Demo {
+
+	int a;
+	String b;
+
+	public Demo(int a, String b) {
+		super();
+		this.a = a;
+		this.b = b;
+	}
+
+}

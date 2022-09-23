@@ -1,0 +1,5 @@
+package com.jspiders.springannotations.beans;
+
+public class StudentBean {
+
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="com.jspiders.springcore.beans.TeamBean" name="team1">
+		<property name="id" value="1" />
+		<property name="name" value="Mumbai Indians" />
+		<property name="city" value="Mumbai" />
+		<property name="players">
+			<list>
+				<bean class="com.jspiders.springcore.beans.PlayerBean"
+					name="player1">
+					<property name="id" value="1" />
+					<property name="name" value="Rohit Sharma" />
+					<property name="role" value="Batsman" />
+				</bean>
+				<bean class="com.jspiders.springcore.beans.PlayerBean"
+					name="player2">
+					<property name="id" value="2" />
+					<property name="name" value="Jasprit Bumrah" />
+					<property name="role" value="Bowler" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+</beans>

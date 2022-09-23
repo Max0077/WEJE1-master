@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.jspiders.springcore.beans.PatientBean"
+		name="patient1">
+		<property name="id" value="1" />
+		<property name="name" value="Amar" />
+		<property name="doctor" ref="doctor1" />
+	</bean>
+	<bean class="com.jspiders.springcore.beans.PatientBean"
+		name="patient2">
+		<property name="id" value="2" />
+		<property name="name" value="Akbar" />
+		<property name="doctor" ref="doctor1" />
+	</bean>
+	<bean class="com.jspiders.springcore.beans.PatientBean"
+		name="patient3">
+		<property name="id" value="3" />
+		<property name="name" value="Anthony" />
+		<property name="doctor" ref="doctor1" />
+	</bean>
+	<bean class="com.jspiders.springcore.beans.DoctorBean"
+		name="doctor1">
+		<property name="id" value="1" />
+		<property name="name" value="Dr. Strange" />
+		<property name="specialization" value="Marvel" />
+	</bean>
+</beans>

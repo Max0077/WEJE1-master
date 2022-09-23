@@ -1,0 +1,11 @@
+package com.jspiders.springcore.config;
+
+import com.jspiders.springcore.beans.StudentBean;
+
+public class StudentConfig {
+	
+	public void getBean() {
+		new StudentBean();
+	}
+
+}

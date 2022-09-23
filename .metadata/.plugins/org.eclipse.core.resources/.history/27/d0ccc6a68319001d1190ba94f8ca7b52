@@ -1,0 +1,43 @@
+package com.jspiders.demo.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+import org.hibernate.TransactionException;
+
+import com.jspiders.demo.dto.StudentDTO;
+
+public class StudentDAO {
+
+	private static EntityManagerFactory factory;
+	private static EntityManager manager;
+	private static EntityTransaction transaction;
+
+	public static void main(String[] args) {
+		factory = Persistence.createEntityManagerFactory("demo");
+		manager = factory.createEntityManager();
+		transaction = manager.getTransaction();
+		transaction.begin();
+
+		StudentDTO student1 = new StudentDTO();
+		student1.setRollNo(3);
+		student1.setName("Kattappa");
+		student1.setEmail("kattappa@mahishmati.com");
+
+		manager.persist(student1);
+
+		transaction.commit();
+
+		factory.close();
+		manager.close();
+		try {
+			transaction.rollback();
+		} catch (TransactionException e) {
+			System.out.println("Transaction cannot be rolled back");
+		}
+
+	}
+
+}

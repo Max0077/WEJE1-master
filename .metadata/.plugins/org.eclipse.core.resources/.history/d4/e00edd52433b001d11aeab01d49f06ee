@@ -1,0 +1,8 @@
+package com.jspiders.springmvc.dao;
+
+public interface StudentDAOInterface {
+
+	void addStudent(String name, String email, String userName, 
+			String password);
+
+}

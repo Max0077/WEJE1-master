@@ -1,0 +1,14 @@
+package com.jspiders.springannotations.beans;
+
+@Data
+public class StudentBean {
+
+	private int id;
+
+	private String name;
+
+	private String email;
+
+	private String address;
+
+}
