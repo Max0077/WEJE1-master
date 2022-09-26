@@ -7,6 +7,21 @@
 <meta charset="ISO-8859-1">
 <title>Student Management</title>
 <style type="text/css">
+fieldset table {
+	margin: auto;
+	text-align: left;
+}
+
+fieldset {
+	margin: 15px 520px;
+	text-align: center;
+}
+
+legend {
+	color: white;
+	background-color: #333;
+}
+
 ul {
 	list-style-type: none;
 	background-color: black;
@@ -27,15 +42,23 @@ li a {
 li a:hover {
 	background-color: #111;
 }
+
+
 </style>
+
 </head>
 <body>
 	<ul>
-		<li><a style="color: white;" href="./logout">Logout</a></li>
-		<li><a style="color: white;" href="./search">Search Employee</a></li>
-		<li><a style="color: white;" href="./insert">Insert Employee</a></li>
-		<li><a style="color: white;" href="./update">Update Employee</a></li>
-		<li><a style="color: white;" href="./remove">Remove Employee</a></li>
+		<li><a style="color: white;" 
+		href="./logout">Logout</a></li>
+		<li><a style="color: white;" 
+		href="./searchStudent">Search Student</a></li>
+		<li><a style="color: white;" 
+		href="./addStudent">Insert Student</a></li>
+		<li><a style="color: white;" 
+		href="./updateStudent">Update Student</a></li>
+		<li><a style="color: white;" 
+		href="./removeStudent">Remove Student</a></li>
 	</ul>
 </body>
 </html>

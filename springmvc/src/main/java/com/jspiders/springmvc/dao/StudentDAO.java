@@ -66,18 +66,20 @@ public class StudentDAO implements StudentDAOInterface {
 
 		entityTransaction.begin();
 
-		String jpql = "from StudentDTO where userName = '" 
-		+ userName + "' and password = '" + password + "'";
+		String jpql = "from StudentDTO where userName = '" + userName + "' and password = '" + password + "'";
 
 		Query query = entityManager.createQuery(jpql);
-		StudentDTO student = (StudentDTO) query.getSingleResult();
-		if (student != null) {
+		try {
+			StudentDTO student = (StudentDTO) query.getSingleResult();
+			if (student != null) {
+				closeConnections();
+				return student;
+			}
 			closeConnections();
-			return student;
+		} catch (Exception e) {
+			return null;
 		}
-		closeConnections();
 		return null;
-
 	}
 
 }

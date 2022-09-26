@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<fieldset>
+		<legend>:::LOGIN:::</legend>
+		<form method="post" action="./home">
+			<table>
+				<tr>
+					<td><label>Username</label></td>
+					<td><input type="text" name="userName"></td>
+				</tr>
+				<tr>
+					<td><label>Password</label></td>
+					<td><input type="text" name="password"></td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="Login"></td>
+				</tr>
+			</table>
+		</form>
+	</fieldset>
+
+</body>
+</html>

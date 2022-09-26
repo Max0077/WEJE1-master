@@ -7,7 +7,36 @@ String name = request.getParameter("name");
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Add Student</title>
+<style type="text/css">
+form {
+	margin-top: 10px;
+}
+
+form table {
+	margin: auto;
+	width: auto;
+}
+
+tr {
+	text-align: center;
+}
+
+fieldset table {
+	margin: auto;
+	text-align: left;
+}
+
+fieldset {
+	margin: 15px 520px;
+	text-align: center;
+}
+
+legend {
+	color: white;
+	background-color: #333;
+}
+</style>
 </head>
 <body>
 	<fieldset>

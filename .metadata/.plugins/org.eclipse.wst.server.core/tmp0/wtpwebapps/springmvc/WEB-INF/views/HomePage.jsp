@@ -9,15 +9,50 @@ StudentDTO student = (StudentDTO) request.getAttribute("student");
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title></title>
+<title>Home Page</title>
+<style type="text/css">
+form {
+	margin-top: 10px;
+}
+
+form table {
+	margin: auto;
+	width: 100%;
+}
+
+tr {
+	text-align: center;
+}
+
+fieldset table {
+	margin: auto;
+	text-align: left;
+}
+
+fieldset {
+	margin: 15px 520px;
+	text-align: center;
+}
+
+legend {
+	color: white;
+	background-color: #333;
+}
+
+body {
+	background-image:
+		url('https://mcdn.wallpapersafari.com/medium/24/6/EOryRH.jpg');
+	background-size: 100%;
+}
+</style>
 </head>
 <body>
 	<%
 	if (student != null) {
 	%>
-	<h3>
+	<h1>
 		Welcome
-		<%=student.getName()%></h3>
+		<%=student.getName()%></h1>
 	<%
 	}
 	%>

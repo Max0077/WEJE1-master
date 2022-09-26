@@ -35,8 +35,15 @@ public class StudentController {
 			map.addAttribute("student", student);
 			return "HomePage";
 		}
+		map.addAttribute("msg", "Invalid username or password");
 		return "LoginPage";
 
+	}
+
+	@GetMapping("/logout")
+	private String logout(ModelMap map) {
+		map.addAttribute("msg", "Successfully logged out");
+		return "LoginPage";
 	}
 
 }

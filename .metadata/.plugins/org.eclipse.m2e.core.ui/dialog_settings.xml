@@ -28,19 +28,19 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.jspiders.springmvc"/>
+			<item value="com.jspiders.springmvc1"/>
+			<item value="com.jspiders.springannotations"/>
 			<item value="com.jspiders.springcore"/>
-			<item value="com.jspiders.demo1"/>
-			<item value="com.jspiders.hibernate"/>
-			<item value="com.jspiders.demo"/>
 		</list>
 		<list key="groupId">
 			<item value="com.jspiders"/>
 		</list>
 		<list key="artifactId">
+			<item value="springmvc"/>
+			<item value="springmvc1"/>
+			<item value="springannotations"/>
 			<item value="springcore"/>
-			<item value="demo1"/>
-			<item value="hibernate"/>
-			<item value="demo"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
