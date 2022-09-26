@@ -36,6 +36,12 @@ legend {
 	color: white;
 	background-color: #333;
 }
+
+body {
+	background-image:
+		url('https://mcdn.wallpapersafari.com/medium/24/6/EOryRH.jpg');
+	background-size: 100%;
+}
 </style>
 </head>
 <body>

@@ -1,0 +1,17 @@
+<%@page import="com.jspiders.springmvc.dto.StudentDTO"%>
+<%@page import="java.util.List"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%
+List<StudentDTO> students = (List<StudentDTO>) request.getAttribute("students");
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Remove Student</title>
+</head>
+<body>
+
+</body>
+</html>

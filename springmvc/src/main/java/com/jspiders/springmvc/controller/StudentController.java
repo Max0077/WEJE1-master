@@ -1,5 +1,7 @@
 package com.jspiders.springmvc.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -44,6 +46,13 @@ public class StudentController {
 	private String logout(ModelMap map) {
 		map.addAttribute("msg", "Successfully logged out");
 		return "LoginPage";
+	}
+
+	@GetMapping("/removeStudent")
+	private String removeStudent(ModelMap map) {
+		List<StudentDTO> students = service.viewAllStudents();
+		map.addAttribute("students", students);
+		return "RemoveStudent";
 	}
 
 }

@@ -49,11 +49,16 @@ li a:hover {
 </head>
 <body>
 	<ul>
-		<li><a style="color: white;" href="./logout">Logout</a></li>
-		<li><a style="color: white;" href="./searchStudent">Search Student</a></li>
-		<li><a style="color: white;" href="./addStudent">Insert Student</a></li>
-		<li><a style="color: white;" href="./updateStudent">Update Student</a></li>
-		<li><a style="color: white;" href="./removeStudent">Remove Student</a></li>
+		<li><a style="color: white;" 
+		href="./logout">Logout</a></li>
+		<li><a style="color: white;" 
+		href="./searchStudent">Search Student</a></li>
+		<li><a style="color: white;" 
+		href="./addStudent">Insert Student</a></li>
+		<li><a style="color: white;" 
+		href="./updateStudent">Update Student</a></li>
+		<li><a style="color: white;" 
+		href="./removeStudent">Remove Student</a></li>
 	</ul>
 </body>
 </html>

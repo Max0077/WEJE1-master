@@ -1,5 +1,7 @@
 package com.jspiders.springmvc.dao;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
@@ -80,6 +82,21 @@ public class StudentDAO implements StudentDAOInterface {
 			return null;
 		}
 		return null;
+	}
+
+	@Override
+	public List<StudentDTO> viewAllStudents() {
+		openConnections();
+
+		entityTransaction.begin();
+
+		String jpql = "from StudentDTO";
+
+		Query query = entityManager.createQuery(jpql);
+		List<StudentDTO> students = query.getResultList();
+
+		closeConnections();
+		return students;
 	}
 
 }
