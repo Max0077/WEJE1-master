@@ -5,6 +5,9 @@
 <%
 List<StudentDTO> students = (List<StudentDTO>) request.getAttribute("students");
 %>
+<%
+String msg = (String) request.getAttribute("msg");
+%>
 <%!int i;%>
 <!DOCTYPE html>
 <html>
@@ -62,6 +65,13 @@ body {
 			</table>
 		</form>
 	</fieldset>
+	<%
+	if (msg != null) {
+	%>
+	<h3><%=msg%></h3>
+	<%
+	}
+	%>
 	<%
 	if (students != null) {
 	%>

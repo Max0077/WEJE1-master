@@ -99,4 +99,30 @@ public class StudentDAO implements StudentDAOInterface {
 		return students;
 	}
 
+	@Override
+	public StudentDTO removeStudent(int id) {
+		openConnections();
+		entityTransaction.begin();
+		StudentDTO student = entityManager.find(StudentDTO.class, id);
+		entityManager.remove(student);
+		entityTransaction.commit();
+		closeConnections();
+		return student;
+	}
+
+	@Override
+	public StudentDTO searchStudent(int id) {
+		openConnections();
+		entityTransaction.begin();
+		StudentDTO student = entityManager.find(StudentDTO.class, id);
+		closeConnections();
+		return student;
+	}
+
+	@Override
+	public StudentDTO updateStudent(int id, String name, String email, String userName, String password) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

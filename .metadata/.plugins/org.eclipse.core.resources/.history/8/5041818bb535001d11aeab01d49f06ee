@@ -1,9 +1,0 @@
-package com.jspiders.springcore.beans;
-
-public class EmployeeBean {
-	
-	private int id;
-	
-	private String name;
-
-}

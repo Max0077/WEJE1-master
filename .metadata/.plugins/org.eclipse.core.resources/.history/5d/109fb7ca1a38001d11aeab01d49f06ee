@@ -1,5 +1,0 @@
-package com.jspiders.springannotations.config;
-
-public class EmployeeConfig {
-
-}

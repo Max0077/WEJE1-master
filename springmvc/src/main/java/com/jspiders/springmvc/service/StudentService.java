@@ -38,4 +38,29 @@ public class StudentService implements StudentServiceInterface {
 		return students;
 	}
 
+	@Override
+	public StudentDTO removeStudent(int id) {
+		if (id >= 0) {
+			StudentDTO student = dao.removeStudent(id);
+			return student;
+		}
+		return null;
+
+	}
+
+	@Override
+	public StudentDTO searchStudent(int id) {
+		if (id >= 0) {
+			StudentDTO student = dao.searchStudent(id);
+			return student;
+		}
+		return null;
+	}
+
+	@Override
+	public StudentDTO updateStudent(int id, String name, String email, String userName, String password) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

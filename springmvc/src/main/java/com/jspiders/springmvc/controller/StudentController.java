@@ -55,4 +55,37 @@ public class StudentController {
 		return "RemoveStudent";
 	}
 
+	@PostMapping("/removeStudent")
+	private String removeStudent1(@RequestParam int id, ModelMap map) {
+		StudentDTO student = service.removeStudent(id);
+		if (student != null) {
+			map.addAttribute("msg", "Student removed from database");
+			List<StudentDTO> students = service.viewAllStudents();
+			map.addAttribute("students", students);
+			return "RemoveStudent";
+		}
+		map.addAttribute("msg", "Invalid student id entered");
+		List<StudentDTO> students = service.viewAllStudents();
+		return "RemoveStudent";
+	}
+
+	@GetMapping("/updateStudent")
+	private String updateStudent(ModelMap map) {
+		List<StudentDTO> students = service.viewAllStudents();
+		map.addAttribute("students", students);
+		return "UpdateStudent";
+	}
+
+	@PostMapping("/updateStudent")
+	private String updateStudent1(@RequestParam int id, ModelMap map) {
+		StudentDTO student = service.searchStudent(id);
+		if (student != null) {
+			map.addAttribute("student", student);
+			return "UpdateStudent";
+		}
+		map.addAttribute("msg", "Invalid student id entered");
+		List<StudentDTO> students = service.viewAllStudents();
+		return "UpdateStudent";
+	}
+
 }

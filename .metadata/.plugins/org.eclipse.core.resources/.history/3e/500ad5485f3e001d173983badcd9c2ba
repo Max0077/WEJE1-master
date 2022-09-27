@@ -1,0 +1,58 @@
+package com.jspiders.springmvc.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.jspiders.springmvc.dto.StudentDTO;
+import com.jspiders.springmvc.service.StudentService;
+
+@Controller
+public class StudentController {
+
+	@Autowired
+	private StudentService service;
+
+	@GetMapping("/addStudent")
+	private String addStudentPage() {
+		return "AddStudentForm";
+	}
+
+	@PostMapping("/addStudent")
+	private String addStudent(@RequestParam String name, @RequestParam String email, @RequestParam String userName,
+			@RequestParam String password) {
+		service.addStudent(name, email, userName, password);
+		return "AddStudentForm";
+	}
+
+	@PostMapping("/home")
+	private String login(@RequestParam String userName, @RequestParam String password, ModelMap map) {
+		StudentDTO student = service.login(userName, password);
+		if (student != null) {
+			map.addAttribute("student", student);
+			return "HomePage";
+		}
+		map.addAttribute("msg", "Invalid username or password");
+		return "LoginPage";
+
+	}
+
+	@GetMapping("/logout")
+	private String logout(ModelMap map) {
+		map.addAttribute("msg", "Successfully logged out");
+		return "LoginPage";
+	}
+
+	@GetMapping("/removeStudent")
+	private String removeStudent(ModelMap map) {
+		List<StudentDTO> students = service.viewAllStudents();
+		map.addAttribute("students", students);
+		return "RemoveStudent";
+	}
+
+}
