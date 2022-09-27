@@ -50,7 +50,7 @@ public class StudentService implements StudentServiceInterface {
 
 	@Override
 	public StudentDTO searchStudent(int id) {
-		if (id >= 0) {
+		if (id > 0) {
 			StudentDTO student = dao.searchStudent(id);
 			return student;
 		}
@@ -59,7 +59,10 @@ public class StudentService implements StudentServiceInterface {
 
 	@Override
 	public StudentDTO updateStudent(int id, String name, String email, String userName, String password) {
-		// TODO Auto-generated method stub
+		if (id > 0) {
+			StudentDTO student = dao.updateStudent(id, name, email, userName, password);
+			return student;
+		}
 		return null;
 	}
 

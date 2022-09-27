@@ -66,6 +66,7 @@ public class StudentController {
 		}
 		map.addAttribute("msg", "Invalid student id entered");
 		List<StudentDTO> students = service.viewAllStudents();
+		map.addAttribute("students", students);
 		return "RemoveStudent";
 	}
 
@@ -85,6 +86,24 @@ public class StudentController {
 		}
 		map.addAttribute("msg", "Invalid student id entered");
 		List<StudentDTO> students = service.viewAllStudents();
+		map.addAttribute("students", students);
+		return "UpdateStudent";
+	}
+
+	@PostMapping("/updateStudentData")
+	private String updateStudent2(@RequestParam int id, @RequestParam String name, @RequestParam String email,
+			@RequestParam String userName, @RequestParam String password, ModelMap map) {
+		StudentDTO student = service.searchStudent(id);
+		if (student != null) {
+			service.updateStudent(id, name, email, userName, password);
+			map.addAttribute("msg", "Student updated successfully");
+			List<StudentDTO> students = service.viewAllStudents();
+			map.addAttribute("students", students);
+			return "UpdateStudent";
+		}
+		map.addAttribute("msg", "Student not found");
+		List<StudentDTO> students = service.viewAllStudents();
+		map.addAttribute("students", students);
 		return "UpdateStudent";
 	}
 

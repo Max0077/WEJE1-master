@@ -55,26 +55,26 @@ body {
 	%>
 	<fieldset>
 		<legend>:::Update Student:::</legend>
-		<form method="get" action="./updateStudent">
+		<form method="post" action="./updateStudentData">
 			<table>
 				<tr hidden="true">
-					<td><input type="text" value="<%=student.getId()%>"></td>
+					<td><input type="text" name="id" value="<%=student.getId()%>"></td>
 				</tr>
 				<tr>
 					<td><label>Name</label></td>
-					<td><input type="text" value="<%=student.getName()%>"></td>
+					<td><input type="text" name="name" value="<%=student.getName()%>"></td>
 				</tr>
 				<tr>
 					<td><label>Email</label></td>
-					<td><input type="text" value="<%=student.getEmail()%>"></td>
+					<td><input type="text" name="email" value="<%=student.getEmail()%>"></td>
 				</tr>
 				<tr>
 					<td><label>Username</label></td>
-					<td><input type="text" value="<%=student.getUserName()%>"></td>
+					<td><input type="text" name="userName" value="<%=student.getUserName()%>"></td>
 				</tr>
 				<tr>
 					<td><label>Password</label></td>
-					<td><input type="text" value="<%=student.getPassword()%>"></td>
+					<td><input type="text" name="password" value="<%=student.getPassword()%>"></td>
 				</tr>
 				<tr>
 					<td><input type="submit" value="Update"></td>
