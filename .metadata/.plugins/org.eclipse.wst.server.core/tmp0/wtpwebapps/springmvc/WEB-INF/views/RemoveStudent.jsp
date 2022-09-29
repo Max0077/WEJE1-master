@@ -2,6 +2,7 @@
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<jsp:include page="NavBar.jsp"></jsp:include>
 <%
 List<StudentDTO> students = (List<StudentDTO>) request.getAttribute("students");
 %>
@@ -43,9 +44,21 @@ legend {
 	background-color: #333;
 }
 
+#data {
+	background-color: white;
+	border: 1px solid black;
+	width: 100%;
+	border: 1px solid black;
+}
+
+#data td {
+	border: 1px solid black;
+	text-align: center;
+}
+
 body {
 	background-image:
-		url('https://mcdn.wallpapersafari.com/medium/24/6/EOryRH.jpg');
+		url('https://www.xmple.com/wallpaper/linear-blue-white-highlight-gradient-1920x1080-c2-ffffff-e0ffff-l-50-a-165-f-21.svg');
 	background-size: 100%;
 }
 </style>
@@ -75,7 +88,7 @@ body {
 	<%
 	if (students != null) {
 	%>
-	<table style="width: 100%;">
+	<table id="data">
 		<tr>
 			<td><h3>ID</h3></td>
 			<td><h3>Name</h3></td>

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+	<jsp:include page="NavBar.jsp"></jsp:include>
 <%
 String name = request.getParameter("name");
 %>
@@ -39,7 +40,7 @@ legend {
 
 body {
 	background-image:
-		url('https://mcdn.wallpapersafari.com/medium/24/6/EOryRH.jpg');
+		url('https://www.xmple.com/wallpaper/linear-blue-white-highlight-gradient-1920x1080-c2-ffffff-e0ffff-l-50-a-165-f-21.svg');
 	background-size: 100%;
 }
 </style>

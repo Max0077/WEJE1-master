@@ -2,6 +2,7 @@
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<jsp:include page="NavBar.jsp"></jsp:include>
 <%
 List<StudentDTO> students = (List<StudentDTO>) request.getAttribute("students");
 String msg = (String) request.getAttribute("msg");
@@ -42,9 +43,21 @@ legend {
 	background-color: #333;
 }
 
+#data {
+	background-color: white;
+	border: 1px solid black;
+	width: 100%;
+	border: 1px solid black;
+}
+
+#data td {
+	border: 1px solid black;
+	text-align: center;
+}
+
 body {
 	background-image:
-		url('https://mcdn.wallpapersafari.com/medium/24/6/EOryRH.jpg');
+		url('https://www.xmple.com/wallpaper/linear-blue-white-highlight-gradient-1920x1080-c2-ffffff-e0ffff-l-50-a-165-f-21.svg');
 	background-size: 100%;
 }
 </style>
@@ -62,19 +75,23 @@ body {
 				</tr>
 				<tr>
 					<td><label>Name</label></td>
-					<td><input type="text" name="name" value="<%=student.getName()%>"></td>
+					<td><input type="text" name="name"
+						value="<%=student.getName()%>"></td>
 				</tr>
 				<tr>
 					<td><label>Email</label></td>
-					<td><input type="text" name="email" value="<%=student.getEmail()%>"></td>
+					<td><input type="text" name="email"
+						value="<%=student.getEmail()%>"></td>
 				</tr>
 				<tr>
 					<td><label>Username</label></td>
-					<td><input type="text" name="userName" value="<%=student.getUserName()%>"></td>
+					<td><input type="text" name="userName"
+						value="<%=student.getUserName()%>"></td>
 				</tr>
 				<tr>
 					<td><label>Password</label></td>
-					<td><input type="text" name="password" value="<%=student.getPassword()%>"></td>
+					<td><input type="text" name="password"
+						value="<%=student.getPassword()%>"></td>
 				</tr>
 				<tr>
 					<td><input type="submit" value="Update"></td>
@@ -110,7 +127,7 @@ body {
 	<%
 	if (students != null) {
 	%>
-	<table style="width: 100%;">
+	<table id="data">
 		<tr>
 			<td><h3>ID</h3></td>
 			<td><h3>Name</h3></td>
