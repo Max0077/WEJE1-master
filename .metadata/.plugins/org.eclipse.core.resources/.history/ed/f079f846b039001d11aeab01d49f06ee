@@ -1,5 +1,0 @@
-package com.jspiders.springmvc.dto;
-
-public class StudentDTO {
-
-}

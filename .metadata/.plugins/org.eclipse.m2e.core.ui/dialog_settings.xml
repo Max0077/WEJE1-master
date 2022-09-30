@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\WEJE1\springrest"/>
+			<item value="D:\WEJE1\springmvc"/>
 			<item value="D:\WEJE1\servlets\src\main\webapp\DemoJSP3.jsp"/>
 			<item value="D:\WEJE1\demo\pom.xml"/>
 			<item value="D:\WEJE1\demo\src\main\java\com\jspiders\demo\dao\StudentDAO.java"/>
@@ -28,6 +30,8 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.jspiders.rest"/>
+			<item value="com.jspiders.springrest"/>
 			<item value="com.jspiders.springmvc"/>
 			<item value="com.jspiders.springmvc1"/>
 			<item value="com.jspiders.springannotations"/>
@@ -37,6 +41,8 @@
 			<item value="com.jspiders"/>
 		</list>
 		<list key="artifactId">
+			<item value="rest"/>
+			<item value="springrest"/>
 			<item value="springmvc"/>
 			<item value="springmvc1"/>
 			<item value="springannotations"/>
