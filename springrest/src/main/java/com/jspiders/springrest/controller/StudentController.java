@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -46,7 +47,7 @@ public class StudentController {
 	@GetMapping(path = "search{id}", 
 			produces = {MediaType.APPLICATION_JSON_VALUE})
 	private ResponseEntity<StudentResponse> 
-	searchStudent(@RequestParam int id) {
+	searchStudent(@PathVariable int id) {
 		Student student = service.search(id);
 		StudentResponse response = new StudentResponse();
 		if (student != null) {
