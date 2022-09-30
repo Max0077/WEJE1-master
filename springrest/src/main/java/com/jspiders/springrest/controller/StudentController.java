@@ -24,9 +24,11 @@ public class StudentController {
 	@Autowired
 	private StudentService service;
 
-	@PostMapping(path = "/addStudent", consumes = { MediaType.APPLICATION_JSON_VALUE }, produces = {
-			MediaType.APPLICATION_JSON_VALUE })
-	private ResponseEntity<StudentResponse> insertStudent(@RequestBody Student student) {
+	@PostMapping(path = "/addStudent", 
+			consumes = { MediaType.APPLICATION_JSON_VALUE }, 
+			produces = { MediaType.APPLICATION_JSON_VALUE })
+	private ResponseEntity<StudentResponse> 
+	insertStudent(@RequestBody Student student) {
 		Student insertedStudent = service.insert(student);
 		StudentResponse response = new StudentResponse();
 		if (insertedStudent != null) {
@@ -37,7 +39,8 @@ public class StudentController {
 			response.setMsg("FAIL");
 			response.setDescription("Student not inserted");
 		}
-		return new ResponseEntity<StudentResponse>(response, HttpStatus.ACCEPTED);
+		return new ResponseEntity<StudentResponse>
+		(response, HttpStatus.ACCEPTED);
 	}
 
 	@GetMapping(path = "search{id}", 
