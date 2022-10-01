@@ -1,0 +1,5 @@
+package com.jspiders.studentmanagement.controller;
+
+public class StudentController {
+
+}

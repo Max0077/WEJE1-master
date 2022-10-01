@@ -1,0 +1,22 @@
+package com.jspiders.studentmanagement.response;
+
+import java.util.List;
+
+import org.springframework.boot.jackson.JsonComponent;
+
+import com.jspiders.studentmanagement.dto.StudentDTO;
+
+import lombok.Data;
+
+@Data
+public class StudentResponse {
+
+	private String msg;
+
+	private String description;
+
+	private StudentDTO data;
+
+	private List<StudentDTO> list;
+
+}

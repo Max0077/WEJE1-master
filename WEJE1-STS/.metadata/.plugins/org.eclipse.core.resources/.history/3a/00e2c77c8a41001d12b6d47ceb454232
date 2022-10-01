@@ -1,0 +1,5 @@
+package com.jspiders.studentmanagement.repository;
+
+public interface StudentRepository {
+
+}
